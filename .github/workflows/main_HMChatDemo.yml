@@ -19,6 +19,7 @@ jobs:
         uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
+            enable-AzPSSession: true 
     
       - uses: actions/checkout@v2
 
