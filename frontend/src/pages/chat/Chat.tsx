@@ -234,7 +234,7 @@ const Chat = () => {
                             />
                             <QuestionInput
                                 clearOnSend
-                                placeholder="Type a new question.../Test"
+                                placeholder="Type a new question.../Test1111111"
                                 disabled={isLoading}
                                 onSend={question => makeApiRequest(question)}
                             />
