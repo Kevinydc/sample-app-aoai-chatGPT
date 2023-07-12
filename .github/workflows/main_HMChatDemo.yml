@@ -4,6 +4,10 @@
 
 name: Build and deploy Python app to Azure Web App - HMChatDemo
 
+
+uses: Azure/login@v1
+
+
 on:
   push:
     branches:
@@ -15,6 +19,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Azure Login
+        uses: Azure/login@v1
+    
       - uses: actions/checkout@v2
 
       - name: Set up Python version
