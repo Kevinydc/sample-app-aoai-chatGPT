@@ -4,10 +4,6 @@
 
 name: Build and deploy Python app to Azure Web App - HMChatDemo
 
-
-uses: Azure/login@v1
-
-
 on:
   push:
     branches:
